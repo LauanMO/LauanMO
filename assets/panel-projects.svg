@@ -1,0 +1,53 @@
+<svg width="440" height="640" viewBox="0 0 440 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Projects</title>
+  <desc id="desc">Poster that opens the list of Lauan Moreira's projects: web, mobile and APIs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0620"/>
+      <stop offset="1" stop-color="#110a2e"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.35" stop-color="#8ea8ff"/>
+      <stop offset="0.7" stop-color="#2862fb" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#2862fb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura" cx="0.5" cy="0.4" r="0.5">
+      <stop offset="0" stop-color="#7c4dff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0a0620" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .title{font:900 44px 'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:3px;fill:#f2f0ff}
+      .sub{font:500 18px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#a49dc9}
+      .cta{font:800 16px 'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:4px;fill:#8ea8ff}
+    </style>
+  </defs>
+  <rect width="440" height="640" rx="22" fill="url(#bg)"/>
+  <rect width="440" height="640" rx="22" fill="url(#aura)"/>
+
+  <g transform="translate(220 250)">
+    <circle r="132" fill="none" stroke="#2e2463" stroke-width="1.5"/>
+    <circle r="96" fill="none" stroke="#5b8dff" stroke-width="1.5" stroke-dasharray="6 10" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="62" fill="url(#orb)" filter="url(#glow)">
+      <animate attributeName="r" values="56;64;56" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="7" fill="#6ee7b7" filter="url(#glow)">
+      <animateMotion dur="9s" repeatCount="indefinite" path="M132 0A132 132 0 1 1 -132 0A132 132 0 1 1 132 0"/>
+    </circle>
+    <circle r="5" fill="#a78bfa" filter="url(#glow)">
+      <animateMotion dur="14s" repeatCount="indefinite" path="M-96 0A96 96 0 1 0 96 0A96 96 0 1 0 -96 0"/>
+    </circle>
+  </g>
+
+  <text x="220" y="476" text-anchor="middle" class="title">PROJECTS</text>
+  <text x="220" y="512" text-anchor="middle" class="sub">web • mobile • apis • ai</text>
+  <text x="220" y="572" text-anchor="middle" class="cta">ENTER →
+    <animate attributeName="opacity" values="1;0.5;1" dur="2.5s" repeatCount="indefinite"/>
+  </text>
+</svg>

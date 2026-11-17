@@ -1,0 +1,58 @@
+<svg width="400" height="640" viewBox="0 0 400 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Let's talk</title>
+  <desc id="desc">Poster that opens an email to Lauan Moreira about internships, junior roles and projects.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0620"/>
+      <stop offset="1" stop-color="#110a2e"/>
+    </linearGradient>
+    <radialGradient id="blue" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#8ea8ff"/><stop offset="1" stop-color="#2862fb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violet" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#b9a5ff"/><stop offset="1" stop-color="#7c4dff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura" cx="0.5" cy="0.4" r="0.55">
+      <stop offset="0" stop-color="#7c4dff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0a0620" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .title{font:900 40px 'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:2px;fill:#f2f0ff}
+      .sub{font:500 16px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#a49dc9}
+      .cta{font:800 15px 'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:3px;fill:#6ee7b7}
+    </style>
+  </defs>
+  <rect width="400" height="640" rx="22" fill="url(#bg)"/>
+  <rect width="400" height="640" rx="22" fill="url(#aura)"/>
+
+  <circle cx="200" cy="250" r="120" fill="none" stroke="#2e2463" stroke-width="1.5"/>
+  <path id="link" d="M110 250Q200 150 290 250" fill="none" stroke="#5b8dff" stroke-width="2" stroke-dasharray="6 8" opacity="0.8">
+    <animate attributeName="stroke-dashoffset" values="28;0" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M290 250Q200 350 110 250" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="6 8" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" values="28;0" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  <circle r="5" fill="#6ee7b7" filter="url(#glow)">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M110 250Q200 150 290 250"/>
+  </circle>
+  <circle r="5" fill="#6ee7b7" filter="url(#glow)">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M290 250Q200 350 110 250"/>
+  </circle>
+
+  <circle cx="110" cy="250" r="38" fill="url(#blue)" filter="url(#glow)">
+    <animate attributeName="r" values="34;40;34" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="290" cy="250" r="38" fill="url(#violet)" filter="url(#glow)">
+    <animate attributeName="r" values="40;34;40" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="200" y="456" text-anchor="middle" class="title">LET'S TALK</text>
+  <text x="200" y="492" text-anchor="middle" class="sub">internships • junior roles • projects</text>
+  <text x="200" y="552" text-anchor="middle" class="cta">SEND AN EMAIL →
+    <animate attributeName="opacity" values="1;0.5;1" dur="2.5s" repeatCount="indefinite"/>
+  </text>
+</svg>

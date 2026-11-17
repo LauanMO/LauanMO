@@ -1,0 +1,101 @@
+<svg width="1200" height="480" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">The core</title>
+  <desc id="desc">What Lauan builds (full stack web apps, REST APIs, mobile apps, AI features), what he focuses on, and how he works.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0620"/>
+      <stop offset="1" stop-color="#100a2c"/>
+    </linearGradient>
+    <radialGradient id="top" cx="0.5" cy="0.12" r="0.5">
+      <stop offset="0" stop-color="#2862fb" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#0a0620" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineL" x1="120" y1="0" x2="550" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5b8dff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#5b8dff"/>
+    </linearGradient>
+    <linearGradient id="lineR" x1="650" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7c4dff"/>
+      <stop offset="1" stop-color="#7c4dff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="340" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5b8dff" stop-opacity="0"/><stop offset="0.5" stop-color="#5b8dff"/><stop offset="1" stop-color="#5b8dff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="340" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7c4dff" stop-opacity="0"/><stop offset="0.5" stop-color="#a78bfa"/><stop offset="1" stop-color="#7c4dff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="340" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0"/><stop offset="0.5" stop-color="#34d399"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#8ea8ff" stroke-opacity="0.04"/>
+    </pattern>
+    <style>
+      .code{font:800 19px 'Cascadia Mono','SF Mono',Consolas,'Liberation Mono',monospace;fill:#f2f0ff}
+      .title{font:900 32px 'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:3px;fill:#f2f0ff}
+      .sub{font:500 17px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#a49dc9}
+      .cardTitle{font:900 28px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#f2f0ff}
+      .cardSub{font:600 15px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#8f88bd}
+      .item{font:600 17px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#e4e0ff}
+    </style>
+  </defs>
+
+  <rect width="1200" height="480" rx="30" fill="url(#bg)"/>
+  <rect width="1200" height="480" rx="30" fill="url(#grid)"/>
+  <rect width="1200" height="480" rx="30" fill="url(#top)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="9s" repeatCount="indefinite"/>
+  </rect>
+
+  <path d="M120 64H550" stroke="url(#lineL)" stroke-width="2"/>
+  <path d="M650 64H1080" stroke="url(#lineR)" stroke-width="2"/>
+  <g transform="translate(600 64)" filter="url(#glow)">
+    <path d="M0 -32L27.7 -16V16L0 32L-27.7 16V-16Z" fill="#0f0a2c" stroke="#5b8dff" stroke-width="2.5"/>
+    <path d="M0 -40L34.6 -20V20L0 40L-34.6 20V-20Z" fill="none" stroke="#7c4dff" stroke-width="1.5" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite"/>
+    </path>
+    <text x="0" y="6.5" text-anchor="middle" class="code">&lt;/&gt;</text>
+  </g>
+
+  <text x="600" y="140" text-anchor="middle" class="title">THE CORE</text>
+  <text x="600" y="170" text-anchor="middle" class="sub">what I build • what I focus on • how I work</text>
+
+  <g transform="translate(60 204)">
+    <rect width="340" height="246" rx="22" fill="#0c0826" stroke="#2e2463" stroke-width="1.5"/>
+    <rect x="40" y="0" width="260" height="2.5" fill="url(#blue)"/>
+    <text x="32" y="54" class="cardTitle">BUILD</text>
+    <text x="32" y="80" class="cardSub">Apps • APIs • Integrations</text>
+    <g fill="#5b8dff"><circle cx="38" cy="117" r="4.5"/><circle cx="38" cy="151" r="4.5"/><circle cx="38" cy="185" r="4.5"/><circle cx="38" cy="219" r="4.5"/></g>
+    <text x="54" y="123" class="item">Full stack web apps</text>
+    <text x="54" y="157" class="item">REST APIs with JWT auth</text>
+    <text x="54" y="191" class="item">Mobile apps in React Native</text>
+    <text x="54" y="225" class="item">AI features with Gemini</text>
+  </g>
+
+  <g transform="translate(430 204)">
+    <rect width="340" height="246" rx="22" fill="#0c0826" stroke="#2e2463" stroke-width="1.5"/>
+    <rect x="40" y="0" width="260" height="2.5" fill="url(#violet)"/>
+    <text x="32" y="54" class="cardTitle">FOCUS</text>
+    <text x="32" y="80" class="cardSub">Back-end • Mobile • AI</text>
+    <g fill="#a78bfa"><circle cx="38" cy="117" r="4.5"/><circle cx="38" cy="151" r="4.5"/><circle cx="38" cy="185" r="4.5"/><circle cx="38" cy="219" r="4.5"/></g>
+    <text x="54" y="123" class="item">Back-end lead in team projects</text>
+    <text x="54" y="157" class="item">Layered, testable code</text>
+    <text x="54" y="191" class="item">Generative AI in real apps</text>
+    <text x="54" y="225" class="item">CI with GitHub Actions</text>
+  </g>
+
+  <g transform="translate(800 204)">
+    <rect width="340" height="246" rx="22" fill="#0c0826" stroke="#2e2463" stroke-width="1.5"/>
+    <rect x="40" y="0" width="260" height="2.5" fill="url(#mint)"/>
+    <text x="32" y="54" class="cardTitle">PRINCIPLES</text>
+    <text x="32" y="80" class="cardSub">How I work</text>
+    <g fill="#34d399"><circle cx="38" cy="117" r="4.5"/><circle cx="38" cy="151" r="4.5"/><circle cx="38" cy="185" r="4.5"/><circle cx="38" cy="219" r="4.5"/></g>
+    <text x="54" y="123" class="item">Simplicity first</text>
+    <text x="54" y="157" class="item">Small, reviewable changes</text>
+    <text x="54" y="191" class="item">Verify before shipping</text>
+    <text x="54" y="225" class="item">Docs are part of the work</text>
+  </g>
+</svg>

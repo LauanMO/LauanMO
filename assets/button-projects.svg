@@ -1,0 +1,40 @@
+<svg width="520" height="120" viewBox="0 0 520 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Explore projects</title>
+  <desc id="desc">Button that opens the list of all of Lauan Moreira's repositories.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="520" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0620"/>
+      <stop offset="1" stop-color="#140d33"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="520" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5b8dff"/>
+      <stop offset="0.5" stop-color="#7c4dff"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .eyebrow{font:800 13px 'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:3px;fill:#8ea8ff}
+      .label{font:900 30px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#f2f0ff}
+      .arrow{font:900 32px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#6ee7b7}
+    </style>
+  </defs>
+  <rect width="520" height="120" rx="30" fill="url(#bg)"/>
+  <rect x="6" y="6" width="508" height="108" rx="26" fill="none" stroke="url(#edge)" stroke-width="2" stroke-dasharray="300 80" stroke-linecap="round" opacity="0.85">
+    <animate attributeName="stroke-dashoffset" from="0" to="-380" dur="12s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="62" cy="60" r="11" fill="#5b8dff" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;0.45;1" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="98" cy="60" r="11" fill="#34d399" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="140" y="50" class="eyebrow">ALL REPOSITORIES</text>
+  <text x="140" y="86" class="label">Explore Projects</text>
+  <g stroke="#6ee7b7" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="0 0;8 0;0 0" dur="2s" repeatCount="indefinite"/>
+    <path d="M436 60H468M454 46L468 60L454 74"/>
+  </g>
+</svg>

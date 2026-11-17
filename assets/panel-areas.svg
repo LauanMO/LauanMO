@@ -1,0 +1,70 @@
+<svg width="440" height="640" viewBox="0 0 440 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Focus areas</title>
+  <desc id="desc">Map of Lauan Moreira's focus areas: back-end, web, mobile, AI and DevOps.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0620"/>
+      <stop offset="1" stop-color="#110a2e"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.4" stop-color="#b9a5ff"/>
+      <stop offset="1" stop-color="#7c4dff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aura" cx="0.5" cy="0.52" r="0.5">
+      <stop offset="0" stop-color="#2862fb" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#0a0620" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .title{font:900 34px 'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:3px;fill:#f2f0ff}
+      .node{font:800 15px 'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:1.5px;fill:#e4e0ff}
+      .sub{font:500 17px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#a49dc9}
+    </style>
+  </defs>
+  <rect width="440" height="640" rx="22" fill="url(#bg)"/>
+  <rect width="440" height="640" rx="22" fill="url(#aura)"/>
+
+  <text x="220" y="82" text-anchor="middle" class="title">FOCUS AREAS</text>
+
+  <g transform="translate(220 330)">
+    <circle r="128" fill="none" stroke="#5b8dff" stroke-width="1.5" stroke-dasharray="4 9" opacity="0.55">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="60s" repeatCount="indefinite"/>
+    </circle>
+    <g stroke="#2e2463" stroke-width="1.5">
+      <path d="M0 0L0 -128"/><path d="M0 0L121.7 -39.6"/><path d="M0 0L75.2 103.6"/><path d="M0 0L-75.2 103.6"/><path d="M0 0L-121.7 -39.6"/>
+    </g>
+    <path d="M0 0L0 -128" stroke="#8ea8ff" stroke-width="2" stroke-dasharray="14 120" opacity="0.9">
+      <animate attributeName="stroke-dashoffset" values="134;0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 0L75.2 103.6" stroke="#6ee7b7" stroke-width="2" stroke-dasharray="14 120" opacity="0.9">
+      <animate attributeName="stroke-dashoffset" values="134;0" dur="3.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 0L-121.7 -39.6" stroke="#b9a5ff" stroke-width="2" stroke-dasharray="14 120" opacity="0.9">
+      <animate attributeName="stroke-dashoffset" values="134;0" dur="4.2s" repeatCount="indefinite"/>
+    </path>
+
+    <circle r="34" fill="url(#core)" filter="url(#glow)">
+      <animate attributeName="r" values="30;36;30" dur="5s" repeatCount="indefinite"/>
+    </circle>
+
+    <g filter="url(#glow)">
+      <circle cx="0" cy="-128" r="9" fill="#5b8dff"><animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="121.7" cy="-39.6" r="9" fill="#a78bfa"><animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="75.2" cy="103.6" r="9" fill="#34d399"><animate attributeName="opacity" values="1;0.5;1" dur="3.4s" repeatCount="indefinite"/></circle>
+      <circle cx="-75.2" cy="103.6" r="9" fill="#5b8dff"><animate attributeName="opacity" values="0.5;1;0.5" dur="3.4s" repeatCount="indefinite"/></circle>
+      <circle cx="-121.7" cy="-39.6" r="9" fill="#a78bfa"><animate attributeName="opacity" values="1;0.5;1" dur="3.8s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <text x="0" y="-150" text-anchor="middle" class="node">BACK-END</text>
+    <text x="121.7" y="-60" text-anchor="middle" class="node">WEB</text>
+    <text x="75.2" y="136" text-anchor="middle" class="node">MOBILE</text>
+    <text x="-75.2" y="136" text-anchor="middle" class="node">AI</text>
+    <text x="-121.7" y="-60" text-anchor="middle" class="node">DEVOPS</text>
+  </g>
+
+  <text x="220" y="572" text-anchor="middle" class="sub">where I spend my time</text>
+</svg>

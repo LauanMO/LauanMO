@@ -1,0 +1,63 @@
+<svg width="540" height="270" viewBox="0 0 540 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Circula</title>
+  <desc id="desc">Circula: campus marketplace where students donate or sell what they no longer use, built as a PWA. Fastify.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="540" y2="270" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0620"/>
+      <stop offset="1" stop-color="#0d0f2e"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.22" cy="0.5" r="0.45">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0a0620" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="3" refY="5" markerWidth="3.2" markerHeight="3.2" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#6ee7b7"/>
+    </marker>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#6ee7b7" stroke-opacity="0.045"/>
+    </pattern>
+    <style>
+      .eyebrow{font:800 13px 'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:2.5px;fill:#6ee7b7}
+      .title{font:900 36px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#f2f0ff}
+      .desc{font:500 17px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#a49dc9}
+      .tag{font:800 12px 'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:1.5px;fill:#6ee7b7}
+    </style>
+  </defs>
+
+  <rect width="540" height="270" rx="24" fill="url(#bg)"/>
+  <rect width="540" height="270" rx="24" fill="url(#grid)"/>
+  <rect width="540" height="270" rx="24" fill="url(#halo)"/>
+  <rect x="8" y="8" width="524" height="254" rx="19" fill="none" stroke="#34d399" stroke-width="1.6" stroke-dasharray="220 90" stroke-linecap="round" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-310" dur="16s" repeatCount="indefinite"/>
+  </rect>
+
+  <g transform="translate(116 136)">
+    <circle r="62" fill="none" stroke="#1f3b4a" stroke-width="1.5" stroke-dasharray="3 7"/>
+    <g fill="none" stroke="#34d399" stroke-width="5" stroke-linecap="round" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
+      <path d="M-50.7 -18.5A54 54 0 0 1 46.8 -27" marker-end="url(#arrow)"/>
+      <path d="M50.7 18.5A54 54 0 0 1 -46.8 27" marker-end="url(#arrow)"/>
+    </g>
+    <g transform="rotate(-30)">
+      <path d="M-26 0L-11 -17H22V17H-11Z" fill="#0f0a2c" stroke="#6ee7b7" stroke-width="2.4" stroke-linejoin="round" filter="url(#glow)"/>
+      <circle cx="-8" cy="0" r="4.5" fill="none" stroke="#6ee7b7" stroke-width="2.2"/>
+      <path d="M2 -6H14M2 6H10" stroke="#a7f3d0" stroke-width="2.2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <text x="232" y="76" class="eyebrow">CAMPUS MARKETPLACE</text>
+  <text x="232" y="118" class="title">CIRCULA</text>
+  <text x="232" y="154" class="desc">Students donate or sell what</text>
+  <text x="232" y="178" class="desc">they no longer use, as a PWA.</text>
+
+  <g transform="translate(232 202)">
+    <rect width="86" height="28" rx="14" fill="#34d399" fill-opacity="0.1" stroke="#34d399" stroke-opacity="0.55"/>
+    <text x="43" y="18.5" text-anchor="middle" class="tag">FASTIFY</text>
+    <rect x="96" width="54" height="28" rx="14" fill="#34d399" fill-opacity="0.1" stroke="#34d399" stroke-opacity="0.55"/>
+    <text x="123" y="18.5" text-anchor="middle" class="tag">PWA</text>
+  </g>
+</svg>
