@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">
-  <samp>&gt; Hey there! I'm <b><a href="https://lauanmoreira.vercel.app">Lauan Moreira</a></b></samp>
+  <samp>&gt; Hey there! I'm <b><a href="https://lauanmo.github.io/portfolio/">Lauan Moreira</a></b></samp>
 </h3>
 
 <p align="center">
@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://lauanmoreira.vercel.app"><img src="https://img.shields.io/badge/portfolio-live-34d399?style=flat-square&logo=vercel&logoColor=white&labelColor=140d33" alt="Portfolio live" /></a>
+  <a href="https://lauanmo.github.io/portfolio/"><img src="https://img.shields.io/badge/portfolio-live-34d399?style=flat-square&logo=github&logoColor=white&labelColor=140d33" alt="Portfolio live" /></a>
   <a href="mailto:moreiralauanpro@gmail.com"><img src="https://img.shields.io/badge/open%20to-opportunities-5b8dff?style=flat-square&labelColor=140d33" alt="Open to opportunities" /></a>
   <img src="https://img.shields.io/badge/based%20in-Fortaleza%2C%20Brazil-7c4dff?style=flat-square&labelColor=140d33" alt="Based in Fortaleza, Brazil" />
 </p>
@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <a href="https://lauanmoreira.vercel.app"><b>Portfolio</b></a>
+  <a href="https://lauanmo.github.io/portfolio/"><b>Portfolio</b></a>
   &nbsp;|&nbsp;
   <a href="https://github.com/LauanMO?tab=repositories"><b>Projects</b></a>
   &nbsp;|&nbsp;
@@ -37,7 +37,7 @@
 </p>
 
 <p align="center">
-  <a href="https://lauanmoreira.vercel.app"><img src="assets/portal.svg" width="82%" alt="Personal portfolio at lauanmoreira.vercel.app" /></a>
+  <a href="https://lauanmo.github.io/portfolio/"><img src="assets/portal.svg" width="82%" alt="Personal portfolio at lauanmo.github.io/portfolio" /></a>
 </p>
 
 <p align="center">
@@ -124,7 +124,7 @@
 <h3>🧭 Focus Areas</h3>
 <br>
 
-<a href="https://lauanmoreira.vercel.app/#stack"><img src="assets/panel-areas.svg" width="210" alt="Focus areas: back-end, web, mobile, AI and DevOps" /></a>
+<a href="https://lauanmo.github.io/portfolio/#stack"><img src="assets/panel-areas.svg" width="210" alt="Focus areas: back-end, web, mobile, AI and DevOps" /></a>
 
 </td>
 </tr>
@@ -177,7 +177,7 @@
 
 <br>
 
-<a href="https://lauanmoreira.vercel.app"><img src="https://img.shields.io/badge/portfolio-lauanmoreira.vercel.app-5b8dff?style=for-the-badge&logo=vercel&logoColor=white&labelColor=140d33" alt="Portfolio" /></a>
+<a href="https://lauanmo.github.io/portfolio/"><img src="https://img.shields.io/badge/portfolio-lauanmo.github.io%2Fportfolio-5b8dff?style=for-the-badge&logo=github&logoColor=white&labelColor=140d33" alt="Portfolio" /></a>
 <br><br>
 <a href="mailto:moreiralauanpro@gmail.com"><img src="https://img.shields.io/badge/email-moreiralauanpro@gmail.com-7c4dff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=140d33" alt="Email" /></a>
 <br><br>
